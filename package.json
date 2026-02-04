@@ -1,0 +1,45 @@
+{
+  "name": "@humanmenu/agent-pay",
+  "version": "1.1.0",
+  "description": "Open-source USDC autopay client for agents (402 exact scheme).",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agent-pay": "bin/agent-pay"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "SPEC.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "ethers": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
