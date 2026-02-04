@@ -1,6 +1,11 @@
 # agent-pay
 
-Open-source USDC autopay client for agents (402 exact scheme) on Base.
+[![npm version](https://img.shields.io/npm/v/@humanmenu/agent-pay.svg)](https://www.npmjs.com/package/@humanmenu/agent-pay)
+[![npm downloads](https://img.shields.io/npm/dm/@humanmenu/agent-pay.svg)](https://www.npmjs.com/package/@humanmenu/agent-pay)
+[![license](https://img.shields.io/npm/l/@humanmenu/agent-pay.svg)](LICENSE)
+[![github](https://img.shields.io/badge/github-humanmenu/agent--pay-181717?logo=github)](https://github.com/humanmenu/agent-pay)
+
+A tiny, secure wallet tool for agents on Base — 402 autopay plus ETH/ERC-20 transfers.
 
 ## Highlights
 - Non-custodial: keys never leave your machine.
